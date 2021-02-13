@@ -1,0 +1,28 @@
+{
+  "name": "beerjs-prisma-typescript",
+  "version": "0.8.0",
+  "description": "A presentation of Prisma + Typescript withouth so much hassle for BeerJS Feb edition 2021",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write ./** --ignore-unknown",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FMGordillo/beerjs-prisma-typescript.git"
+  },
+  "keywords": [],
+  "author": "FMGordillo<facundomgordillo@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FMGordillo/beerjs-prisma-typescript/issues"
+  },
+  "homepage": "https://github.com/FMGordillo/beerjs-prisma-typescript#readme",
+  "devDependencies": {
+    "@types/node": "^14.14.27",
+    "prettier": "^2.2.1",
+    "prisma": "^2.16.1",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.5"
+  }
+}
