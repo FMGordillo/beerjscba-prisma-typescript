@@ -1,0 +1,10 @@
+export { AggregateAnimeArgs } from "./AggregateAnimeArgs";
+export { CreateAnimeArgs } from "./CreateAnimeArgs";
+export { DeleteAnimeArgs } from "./DeleteAnimeArgs";
+export { DeleteManyAnimeArgs } from "./DeleteManyAnimeArgs";
+export { FindFirstAnimeArgs } from "./FindFirstAnimeArgs";
+export { FindManyAnimeArgs } from "./FindManyAnimeArgs";
+export { FindUniqueAnimeArgs } from "./FindUniqueAnimeArgs";
+export { UpdateAnimeArgs } from "./UpdateAnimeArgs";
+export { UpdateManyAnimeArgs } from "./UpdateManyAnimeArgs";
+export { UpsertAnimeArgs } from "./UpsertAnimeArgs";

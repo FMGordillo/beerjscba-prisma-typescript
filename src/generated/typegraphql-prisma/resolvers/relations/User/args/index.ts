@@ -1,0 +1,1 @@
+export { UserFavoriteAnimesArgs } from "./UserFavoriteAnimesArgs";
