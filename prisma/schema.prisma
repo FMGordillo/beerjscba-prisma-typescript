@@ -10,6 +10,12 @@ generator client {
   provider = "prisma-client-js"
 }
 
+// npx prisma generate ==> Genera todos los 'resolvers' de GraphQL para nuestra conveniencia
+generator typegraphql {
+  provider = "typegraphql-prisma"
+  output   = "../src/generated/typegraphql-prisma"
+}
+
 enum Idolization {
   CASUAL
   ENTHUSIAST
@@ -17,7 +23,6 @@ enum Idolization {
 }
 
 model User {
-  // id Int @id @default(autoincrement())
   id             String      @id @default(uuid())
   fanType        Idolization @default(CASUAL)
   favoriteAnimes Anime[]
@@ -26,7 +31,6 @@ model User {
 }
 
 model Anime {
-  // id Int @id @default(autoincrement())
   id          String    @id @default(uuid())
   name        String
   studio      String?

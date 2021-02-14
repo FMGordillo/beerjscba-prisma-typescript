@@ -1,0 +1,9 @@
+export { AffectedRowsOutput } from "./AffectedRowsOutput";
+export { AggregateAnime } from "./AggregateAnime";
+export { AggregateUser } from "./AggregateUser";
+export { AnimeCountAggregate } from "./AnimeCountAggregate";
+export { AnimeMaxAggregate } from "./AnimeMaxAggregate";
+export { AnimeMinAggregate } from "./AnimeMinAggregate";
+export { UserCountAggregate } from "./UserCountAggregate";
+export { UserMaxAggregate } from "./UserMaxAggregate";
+export { UserMinAggregate } from "./UserMinAggregate";
