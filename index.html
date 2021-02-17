@@ -1,40 +1,86 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-		<title>reveal.js</title>
+    <title>reveal.js</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" id="theme" />
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <!-- Theme used for syntax highlighted code -->
+    <link
+      rel="stylesheet"
+      href="plugin/highlight/monokai.css"
+      id="highlight-theme"
+    />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          Prisma + Typescript
+          <h1>BeerJS 🍻 CBA</h1>
+          <h2>Feb 2021</h2>
+        </section>
+        <section>
+          <ul>
+            <li>
+              CTO @ <a target="_blank" href="https://favforme.com">FavForMe</a>
+            </li>
+            <li>
+              Frontend Dev @
+              <a target="_blank" href="https://phinxlab.com/">PhinxLab</a>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <section>
+            <p>Requisitos</p>
+            <ul>
+              <li>NodeJS >= 10.4.x</li>
+              <li>RAM >= 8GB (con Docker)</li>
+              <li>PostgreSQL (Docker o Host)</li>
+            </ul>
+          </section>
+          <section>
+            <p>Docker VS Hosted</p>
+            <div class="r-hstack">
+              <pre style="margin: 0.25em"><code data-line-numbers>docker run
+--name beerjscba-postgres
+-e POSTGRES_PASSWORD=docker
+-d -p 5432:5432
+postgres</code></pre>
+              <img
+                style="margin: 0.25em"
+                src="/assets/tiny-turtle.png"
+                alt="Free plan for ElephantSQL, a DB provider for PostgreSQL"
+              />
+            </div>
+          </section>
+        </section>
+      </div>
+    </div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
-
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+        slideNumber: true,
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
 </html>
