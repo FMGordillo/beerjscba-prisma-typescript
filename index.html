@@ -30,6 +30,7 @@
         </section>
         <section>
           <ul>
+            <li>"Founder" @ <a target="_blank" href="#">LPC Squad</a></li>
             <li>
               CTO @ <a target="_blank" href="https://favforme.com">FavForMe</a>
             </li>
@@ -40,6 +41,138 @@
           </ul>
         </section>
         <section>
+          <section>
+            <h1>Situación</h1>
+            <div class="r-stack">
+              <img
+                class="fragment fade-in-then-out"
+                src="/assets/favforme.png"
+                alt="Sitio web favforme.com (no disponible)"
+              />
+              <img
+                class="fragment fade-in-then-out"
+                src="/assets/favforme_accion.png"
+                alt="Sitio web favforme.com mostrando una acción social"
+              />
+              <img
+                class="fragment fade-in-then-out"
+                src="/assets/MERN.png"
+                alt="Conjunto de tecnologías MERN (MongoDB + Express.js + React.js + Node.js)"
+              />
+            </div>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1><a target="_blank" href="https://prisma.io">Prisma</a></h1>
+            <img src="/assets/Prisma_logo.png" alt="Logo de prisma.io" />
+          </section>
+          <section>
+            <div class="r-stack">
+              <img
+                class="fragment fade-in-then-out"
+                src="/assets/Prisma_schema.png"
+                alt="Esquema de ejemplo de prisma.io"
+              />
+
+              <img
+                class="fragment fade-in-then-out"
+                src="/assets/Prisma_intellisense.png"
+                alt="Intellisense de Prisma"
+              />
+            </div>
+          </section>
+          <section>
+            <h2>Recomendado</h2>
+            <h3>
+              <a
+                href="https://marketplace.visualstudio.com/items?itemName=Prisma.prisma"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Extensión de VSCode</a
+              >
+            </h3>
+            <img
+              width="700"
+              src="/assets/Prisma_intellisense.gif"
+              alt="Esquema de ejemplo de prisma.io"
+            />
+          </section>
+          <section>
+            <div class="r-stack">
+              <img
+                class="fragment fade-in-then-out"
+                src="/assets/TypeGraphQL_landing.png"
+                alt="Pagína principal de TypeGraphQL"
+              />
+              <img
+                class="fragment fade-in-then-out"
+                src="/assets/Apollo_landing.png"
+                alt="Pagína principal de TypeGraphQL"
+              />
+            </div>
+          </section>
+        </section>
+        <section>
+          <h1>Recapitulando...</h1>
+          <div class="r-hstack">
+            <img
+              height="200"
+              style="background: rgba(226, 226, 226, 0.7)"
+              src="/assets/Apollo_logo.png"
+              alt="Logo de Apollo"
+            />
+            <span style="margin: 0.5em; font-size: 2em">+</span>
+            <img src="/assets/Prisma_logo.png" alt="Logo de Prisma" />
+            <span style="margin: 0.5em; font-size: 2em">+</span>
+            <img src="/assets/TypeGraphQL_logo.png" alt="Logo de Prisma" />
+          </div>
+        </section>
+        <section>
+          <section>
+            <h1>
+              <a
+                target="_blank"
+                href="https://github.com/FMGordillo/beerjscba-prisma-typescript"
+              >
+                Repositorio</a
+              >
+            </h1>
+            <ul>
+              <li>
+                <a
+                  href="https://github.com/FMGordillo/beerjscba-prisma-typescript/tree/part-1-added-schema"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Parte 1 (esquema)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/FMGordillo/beerjscba-prisma-typescript/tree/part-2-apollo-playground"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Parte 2 (GraphQL con Apollo)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/FMGordillo/beerjscba-prisma-typescript/tree/part-3-graphql-apollo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Parte 3 (TypeGraphQL)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/FMGordillo/beerjscba-prisma-typescript/tree/part-4-optional-with-express"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Parte 4 (Extra: Express.js)</a
+                >
+              </li>
+            </ul>
+          </section>
           <section>
             <p>Requisitos</p>
             <ul>
@@ -63,6 +196,157 @@ postgres</code></pre>
               />
             </div>
           </section>
+        </section>
+        <section>
+          <section>
+            <h1>Parte 1</h1>
+          </section>
+          <section data-auto-animate data-auto-animate-unmatched="fade">
+            <ol>
+              <li>
+                <pre><code class="bash">npm init -y</code></pre>
+              </li>
+              <li>
+                <pre><code class="bash">
+npm install -D prisma typescript ts-node @types/node</code
+                  >
+                </pre>
+              </li>
+              <li>
+                <pre><code class="bash">npx tsc init</code></pre>
+              </li>
+              <li>
+                <pre><code class="bash">npx prisma init</code></pre>
+              </li>
+            </ol>
+          </section>
+          <section data-auto-animate data-auto-animate-unmatched="fade">
+            <ol>
+              <li>
+                <pre><code class="bash">npm init -y</code></pre>
+              </li>
+              <li>
+                <pre><code class="bash">
+npm install -D prisma typescript ts-node @types/node</code
+                  >
+                </pre>
+                <p>Dependencias importantes ☝️</p>
+              </li>
+              <li>
+                <pre><code class="bash">npx tsc init</code></pre>
+                <p>Configuración para Typescript ☝️</p>
+              </li>
+              <li>
+                <pre><code class="bash">npx prisma init</code></pre>
+              </li>
+            </ol>
+          </section>
+          <section data-auto-animate data-auto-animate-unmatched="fade">
+            <ol>
+              <li>
+                <pre><code class="bash"
+                  > docker run
+  --name beerjs_postgres
+  -e POSTGRES_PASSWORD=docker
+  -d -p 5432:5432 postgres</code></pre>
+              </li>
+              <li>Crear esquemas, configurar variables de entorno...</li>
+              <li>
+                <pre><code class="bash"
+                  >npx prisma migrate dev --name init --preview-feature</code
+                ></pre>
+              </li>
+            </ol>
+          </section>
+          <section data-auto-animate data-auto-animate-unmatched="fade">
+            <ol>
+              <li>
+                <pre><code class="bash"
+                  > docker run
+  --name beerjs_postgres
+  -e POSTGRES_PASSWORD=docker
+  -d -p 5432:5432 postgres</code></pre>
+              </li>
+              <li>Crear esquemas, configurar variables de entorno...</li>
+              <li>
+                <pre><code class="bash"
+                  >npx prisma migrate dev --name init --preview-feature</code
+                ></pre>
+                <p>Generamos tablas en la DB ☝️</p>
+              </li>
+            </ol>
+          </section>
+          <section>
+            <h1>Resultado ✅</h1>
+            <p>
+              Tenemos Prisma configurado, un esquema de cómo serán las tablas, y
+              una base de datos con el esquema reflejado
+            </p>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1>Parte 2</h1>
+          </section>
+          <section>
+            <img src="/assets/Prisma_generate.png" alt="Generador de Prisma" />
+          </section>
+          <section>
+            <h1>Resultado ✅</h1>
+            <p>Tenemos Prisma con Intellisense (¡a jugar con eso!)</p>
+            <img
+              src="/assets/Prisma_intellisense_playground.gif"
+              alt="Jugando con Prisma"
+            />
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1>Parte 3</h1>
+          </section>
+          <section>
+            <img
+              src="/assets/Github_muchos_cambios.png"
+              alt="Git diff de todos los cambios nuevos"
+            />
+          </section>
+          <section>
+            <h1>
+              <pre><code>npm start</code></pre>
+            </h1>
+            <p>
+              <pre><code># 👀 localhost:3000</code></pre>
+            </p>
+          </section>
+          <section>
+            <h1>Resultado ✅</h1>
+            <p>Tenemos GraphQL Playground (¡a jugar con eso!)</p>
+            <img width="1000" src="/assets/GraphQL_playground.png" alt="Playground de Graphql mostrando ejemplo anterior">
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1>Parte 4</h1>
+            <p>Se las dejo de tarea, Express.js</p>
+          </section>
+        </section>
+        <section>
+          <div class="r-hstack">
+            <img
+              height="200"
+              style="background: rgba(226, 226, 226, 0.7)"
+              src="/assets/Apollo_logo.png"
+              alt="Logo de Apollo"
+            />
+            <span style="margin: 0.5em; font-size: 2em">+</span>
+            <img src="/assets/Prisma_logo.png" alt="Logo de Prisma" />
+            <span style="margin: 0.5em; font-size: 2em">+</span>
+            <img src="/assets/TypeGraphQL_logo.png" alt="Logo de Prisma" />
+          </div>
+        </section>
+        <section>
+          <h1>¡Suerte!</h1>
+          <img src="/assets/beerjs.jpg" alt="Placeholder">
         </section>
       </div>
     </div>
