@@ -3,6 +3,7 @@ let express = require("express");
 let fs = require("fs");
 let io = require("socket.io");
 let crypto = require("crypto");
+let cors = require("cors");
 
 let app = express();
 let staticDir = express.static;
@@ -29,6 +30,8 @@ io.on("connection", (socket) => {
     }
   });
 });
+
+app.use(cors());
 
 app.use(express.static(opts.baseDir));
 
