@@ -356,10 +356,16 @@ npm install -D prisma typescript ts-node @types/node</code
     <script src="plugin/markdown/markdown.js"></script>
     <script src="plugin/highlight/highlight.js"></script>
     <script>
-      // More info about initialization & config:
-      // - https://revealjs.com/initialization/
-      // - https://revealjs.com/config/
       Reveal.initialize({
+        multiplex: {
+          secret: null,
+          socketId: "24cbc268abfc9548",
+          url: "https://beerjscba-fmgordillo.herokuapp.com/"
+        },
+        dependencies: [
+          { src: 'https://reveal-multiplex.glitch.me/socket.io/socket.io.js', async: true },
+          { src: 'https://reveal-multiplex.glitch.me/master.js', async: true },
+        ],
         hash: true,
         slideNumber: true,
         // Learn about plugins: https://revealjs.com/plugins/
