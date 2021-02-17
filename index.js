@@ -31,7 +31,11 @@ io.on("connection", (socket) => {
   });
 });
 
-app.use(cors());
+app.use(
+  cors({
+    origin: ["http://localhost:8080", "http://young-group.surge.sh"],
+  })
+);
 
 app.use(express.static(opts.baseDir));
 
